@@ -1,7 +1,6 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:mvc="http://www.springframework.org/schema/mvc" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:tx="http://www.springframework.org/schema/tx"
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans     
@@ -12,21 +11,21 @@
         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
          http://www.springframework.org/schema/tx
        http://www.springframework.org/schema/tx/spring-tx.xsd">
-       
+
 	<context:component-scan
 		base-package="com.example.persistence.impl,com.example.service.impl,com.example.validator,com.example.web,com.example.controller" />
 	<context:annotation-config />
-	
+
 	<mvc:annotation-driven />
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
-    <bean
-        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-    <property name="location">
-         <value>/properties/database.properties</value>
-        <!--  <value>/properties/database.dev.properties</value>      -->
-	</property>
-   </bean>
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>/properties/database.local.properties</value>
+			<!-- <value>/properties/database.dev.properties</value> -->
+		</property>
+	</bean>
 
 
 	<bean id="dataSource"
@@ -37,19 +36,13 @@
 		<property name="password" value="${jdbc.password}" />
 	</bean>
 
-           <!--
-    <bean class="java.net.URI" id="dbUrl">
-        <constructor-arg value="#{systemEnvironment['DATABASE_URL']}"/>
-    </bean>
-
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-        <property name="driverClassName" value="${jdbc.driverClassName}" />
-        <property name="url" value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + ':' + @dbUrl.getPort() + @dbUrl.getPath() }"/>
-        <property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] }"/>
-        <property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }"/>
-    </bean>
-
-             -->
+	<!-- <bean class="java.net.URI" id="dbUrl"> <constructor-arg value="#{systemEnvironment['DATABASE_URL']}"/> 
+		</bean> <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"> 
+		<property name="driverClassName" value="${jdbc.driverClassName}" /> <property 
+		name="url" value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + ':' + @dbUrl.getPort() 
+		+ @dbUrl.getPath() }"/> <property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] 
+		}"/> <property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] 
+		}"/> </bean> -->
 
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
@@ -72,48 +65,26 @@
 			<value>.jsp</value>
 		</property>
 	</bean>
-	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
-   <property name="basename">
-        <value>language</value>
-   </property>
-</bean>
-<bean name="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
-    <property name="sessionFactory" ref="sessionFactory" />
-</bean>
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename">
+			<value>language</value>
+		</property>
+	</bean>
+	<bean name="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
 </beans>
-<!-- 
-MySQL 5.1 database added.  Please make note of these credentials:
-
-   Root User: admin
-   Root Password: 5zMfwJ_CFT7D
-   Database Name: TaskMaster
-
-Connection URL: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
-
-You can manage your new MySQL database by also embedding phpmyadmin-3.4.
-The phpmyadmin username and password will be the same as the MySQL credentials above.
-//Need to put them into Properties file : Production Data
-<property name="url">
-			<value>jdbc:mysql://127.12.20.129:3306/taskMaster</value>
-		</property>
-		<property name="username">
-			<value>admin</value>
-		</property>
-		<property name="password">
-			<value>5zMfwJ_CFT7D</value>
-		</property>
-
-
-//Local Data :
-
-<property name="url">
-			<value>jdbc:mysql://localhost:3306/taskmaster</value>
-		</property>
-		<property name="username">
-			<value>root</value>
-		</property>
-		<property name="password">
-			<value>root</value>
-		</property>
-
- -->
+<!-- MySQL 5.1 database added. Please make note of these credentials: Root 
+	User: admin Root Password: 5zMfwJ_CFT7D Database Name: TaskMaster Connection 
+	URL: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/ You can manage 
+	your new MySQL database by also embedding phpmyadmin-3.4. The phpmyadmin 
+	username and password will be the same as the MySQL credentials above. //Need 
+	to put them into Properties file : Production Data <property name="url"> 
+	<value>jdbc:mysql://127.12.20.129:3306/taskMaster</value> </property> <property 
+	name="username"> <value>admin</value> </property> <property name="password"> 
+	<value>5zMfwJ_CFT7D</value> </property> //Local Data : <property name="url"> 
+	<value>jdbc:mysql://localhost:3306/taskmaster</value> </property> <property 
+	name="username"> <value>root</value> </property> <property name="password"> 
+	<value>root</value> </property> -->
