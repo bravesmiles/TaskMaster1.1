@@ -38,7 +38,7 @@ jQuery(function()
 <tr><td>Start Date (dd/mm/yyyy):
 <form:input path="date" class="datepicker" data-date-format="dd/mm/yyyy" readonly="true" type="text" required="true"/>
 <form:errors class="text-error" path="date" /></td></tr>
-<tr><td>Assign Task to :<select name="userId">
+<tr><td>Invite your friends :<select name="userId">
 <option value="0">Self</option>
 <c:forEach items="${users}" var="user"> 
 <option value="${user.id}">${user.firstName}</option>

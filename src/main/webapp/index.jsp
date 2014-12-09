@@ -86,14 +86,14 @@ function openCreateUserPage(){
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Task Master</a>
+          <a class="brand" href="#">GoParty</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact">Contact us</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">other <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -119,7 +119,7 @@ function openCreateUserPage(){
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Welcome to EASIER EVENT</h1>
+        <h1>Welcome to GoParty</h1>
         <p>Managing your events was never so easy!.
         <br>And see them from anywhere!</p>
         <p>
@@ -136,20 +136,20 @@ function openCreateUserPage(){
         </div>
         <div class="span4">
           <h2>Discounts</h2>
-          <p> where are you come from? Google,FaceBook,Cisco,or anyother else! come here to see what discount can you get from your wonderful company! </p>
+          <p> Where are you come from? Google,FaceBook,Cisco,or anyother else! come here to see what discount can you get from your wonderful company! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
           <p><a class="btn" href="#">Find discounts &raquo;</a></p>
        </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>I don't know what to write here now....</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>Guess what you like</h2>
+          <p>Don't know which party to join , go to see what your friends like. &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  </p>
+          <p><a class="btn" href="#"> Find your friends &raquo;</a></p>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>&copy; soy souce become first prize 2013</p>
+        <p>&copy; soy souce become first prize 2014</p>
       </footer>
 
     </div> <!-- /container -->
