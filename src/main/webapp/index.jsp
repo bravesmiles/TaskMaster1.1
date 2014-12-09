@@ -37,7 +37,7 @@ function openCreateUserPage(){
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>TaskMaster</title>
+    <title>EASIER EVENT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -119,8 +119,8 @@ function openCreateUserPage(){
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Welcome to Task Master version 2</h1>
-        <p>Managing Tasks was never so easy!You can make your tasks view them and mark them as done.
+        <h1>Welcome to EASIER EVENT</h1>
+        <p>Managing your events was never so easy!.
         <br>And see them from anywhere!</p>
         <p>
 	    <a class="btn btn-primary btn-large" href="javascript:openCreateUserPage()">Register&raquo;</a>
@@ -130,18 +130,18 @@ function openCreateUserPage(){
       <!-- Example row of columns -->
       <div class="row">
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>Finding events</h2>
+          <p>Come here to find the events  that you are interested in .You can also add your events to Microsoft Outlook, Google Calendar or Apple Calendar. Once you add them, they'll stay updated.Here we go now!!!</p>
+          <p><a class="btn" href="#">View events &raquo;</a></p>
         </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>Discounts</h2>
+          <p> where are you come from? Google,FaceBook,Cisco,or anyother else! come here to see what discount can you get from your wonderful company! </p>
+          <p><a class="btn" href="#">Find discounts &raquo;</a></p>
        </div>
         <div class="span4">
           <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>I don't know what to write here now....</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
       </div>
@@ -149,7 +149,7 @@ function openCreateUserPage(){
       <hr>
 
       <footer>
-        <p>&copy; anirudhbhatnagar 2013</p>
+        <p>&copy; soy souce become first prize 2013</p>
       </footer>
 
     </div> <!-- /container -->

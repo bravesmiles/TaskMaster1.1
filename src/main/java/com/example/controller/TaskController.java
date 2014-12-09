@@ -73,7 +73,7 @@ public class TaskController {
 			}
 		}
 		model.addAttribute("tasks", taskFormList);
-		return "viewTasks";
+		return "viewTodayTasks";
 		
 	}
 	

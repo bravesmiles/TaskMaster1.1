@@ -56,14 +56,14 @@ function openCreateTaskForm(){
 	}
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>View Tasks</title>
+<title>View all event</title>
 </head>
 <body>
-<h1>All Tasks</h1>
+<h1>Choose whatever you like</h1>
  <c:set var="numOfTasks" value="${fn:length(tasks)}"/>
 <c:choose>
 <c:when test="${numOfTasks == 0}">
-No Tasks pending!! Enjoy buddy! PAARRRRTTYYYYY~~~!!
+No events now  >_<
 </c:when>
 <c:otherwise>
 <div class="container-fluid">
@@ -108,6 +108,6 @@ ${task.date}
 <br><p id="info"><font color="red">${sucessmsg}</font></p>
 <br>
 <input type="button" class="btn btn-success btn-small" value="Back" onclick="javascript:backPage()">
-<input type="button" class="btn btn-success btn-small" value="Create Task" onclick="javascript:openCreateTaskForm()">
+<input type="button" class="btn btn-success btn-small" value="I wanna join those" onclick="javascript:openCreateTaskForm()">
 </body>
 </html>

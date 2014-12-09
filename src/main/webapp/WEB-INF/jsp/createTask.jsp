@@ -31,11 +31,11 @@ jQuery(function()
 	<table class="table">
 
 <form:hidden path="id"/>
-<tr><td>Enter Task :<form:input path="name" required="true"/>
+<tr><td>Event name :<form:input path="name" required="true"/>
 <form:errors class="text-error" path="name" /></td></tr>
 <tr><td>Description :<form:input path="description" required="true"/>
 <form:errors class="text-error" path="description"/></td></tr>
-<tr><td>Enter Last Date (dd/mm/yyyy):
+<tr><td>Start Date (dd/mm/yyyy):
 <form:input path="date" class="datepicker" data-date-format="dd/mm/yyyy" readonly="true" type="text" required="true"/>
 <form:errors class="text-error" path="date" /></td></tr>
 <tr><td>Assign Task to :<select name="userId">

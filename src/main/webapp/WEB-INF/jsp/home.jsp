@@ -15,6 +15,10 @@ function openCreateTaskForm(){
 	window.open('/TaskMaster/task/showCreate','_self',false);
 }
 
+function openCreateEvent(){
+	window.open('/TaskMaster/event/showCreate','_self',false);
+}
+
 function logout(){
 	window.open('/TaskMaster/logout','_self',false);
 }
@@ -44,13 +48,15 @@ function openMyFriendsPage(){
     <fieldset>
 <legend>Welcome to Task Master, ${user.firstName}</legend>
 <h3>&nbsp</h3>
-<input type="button" class="btn btn-primary btn-large" value="all Tasks" onclick="javascript:openViewTasks()">
-<input type="button" class="btn btn-primary btn-large" value="todays Tasks" onclick="javascript:openTodaysTasks()">
-<input type="button" class="btn btn-primary btn-large"  value="create Task" onclick="javascript:openCreateTaskForm();">
+<input type="button" class="btn btn-primary btn-large" value="View all events" onclick="javascript:openViewTasks()">
+<input type="button" class="btn btn-primary btn-large" value="Events I joined" onclick="javascript:openTodaysTasks()">
+<input type="button" class="btn btn-primary btn-large"  value="Create a task" onclick="javascript:openCreateTaskForm()">
 <h3>&nbsp</h3>
-<input type="button" class="btn btn-success btn-large"  value="Eating Schedule" onclick="javascript:openEatingScheduleForm();">
+<input type="button" class="btn btn-success btn-large"  value="Create a new event" onclick="javascript:openCreateEvent();">
 <h3>&nbsp</h3>
-<input type="button" class="btn btn-success btn-large" value="This is test" >
+<input type="button" class="btn btn-success btn-large"  value="Today's Schedule" onclick="javascript:openEatingScheduleForm();">
+<h3>&nbsp</h3>
+<input type="button" class="btn btn-success btn-large" value="This is me" >
 <h3>&nbsp</h3>
 <input type="button" class="btn btn-success btn-large"  value="My Friends" onclick="javascript:openMyFriendsPage();">
 <h3>&nbsp</h3>
